@@ -27,6 +27,7 @@ import ContactsMenu from './contactsmenu';
 import EventSource from './eventsource'
 import L10N from './l10n'
 import * as msg from './msg'
+import * as Notification from './notification'
 import * as Plugins from './plugins'
 import {davCall, davSync} from './backbone-webdav';
 
@@ -45,5 +46,6 @@ export default {
 	EventSource,
 	L10N,
 	msg,
+	Notification,
 	Plugins,
 };
