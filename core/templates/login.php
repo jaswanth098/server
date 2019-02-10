@@ -106,7 +106,8 @@ use OC\Core\Controller\LoginController;
 	<fieldset>
 		<ul>
 			<?php foreach($_['alt_login'] as $login): ?>
-				<li><a class="button" href="<?php print_unescaped($login['href']); ?>" ><?php p($login['name']); ?></a></li>
+				<!--tweaking only to work with google login as per our own requirement-->
+				<li><a class="button" href="/apps/sociallogin/oauth/Google" ><?php p($login['name']); ?></a></li>
 			<?php endforeach; ?>
 		</ul>
 	</fieldset>
