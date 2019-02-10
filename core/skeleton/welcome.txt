@@ -1,5 +1,7 @@
-Welcome to your Nextcloud account!
+Welcome to your Deepcompute Nextcloud account!
 
-This is just an example file for developers and git users. 
-The packaged and released versions will come with better examples.
+If your have logged in through social authentication your username would be same as mail id before '@'
+Eg:
+name@deepcompute.com
+your Username would be "name"
 

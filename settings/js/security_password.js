@@ -24,7 +24,7 @@ $(document).ready(function () {
 	};
 
 	$("#passwordbutton").click(function () {
-		if ($('#pass1').val() !== '' && $('#pass2').val() !== '') {
+		if ($('#pass1').val() === $('#pass2').val()) {
 			// Serialize the data
 			var post = $("#passwordform").serialize();
 			$('#passwordchanged').hide();
@@ -62,7 +62,7 @@ $(document).ready(function () {
 				{
 					'status' : 'error',
 					'data' : {
-						'message' : t('settings', 'Unable to change password')
+						'message' : t('settings', 'Both passwords doesn\'t match')
 					}
 				}
 			);

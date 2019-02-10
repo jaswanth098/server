@@ -135,6 +135,7 @@ class PersonalInfo implements ISettings {
 			'twitterScope' => $userData[AccountManager::PROPERTY_TWITTER]['scope'],
 			'twitterVerification' => $userData[AccountManager::PROPERTY_TWITTER]['verified'],
 			'groups' => $this->getGroups($user),
+			'uid' => $user->getUID(),
 		] + $messageParameters + $languageParameters + $localeParameters;
 
 

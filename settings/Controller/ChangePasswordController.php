@@ -91,6 +91,8 @@ class ChangePasswordController extends Controller {
 	 */
 	public function changePersonalPassword(string $oldpassword = '', string $newpassword = null): JSONResponse {
 		/** @var IUser $user */
+		$user = $this->userSession->getUser();
+		/*
 		$user = $this->userManager->checkPassword($this->userId, $oldpassword);
 		if ($user === false) {
 			$response = new JSONResponse([
@@ -102,6 +104,7 @@ class ChangePasswordController extends Controller {
 			$response->throttle();
 			return $response;
 		}
+		*/
 
 		try {
 			if ($newpassword === null || $user->setPassword($newpassword) === false) {

@@ -129,13 +129,17 @@ class LoginController extends Controller {
 			$this->config->deleteUserValue($this->userSession->getUser()->getUID(), 'login_token', $loginToken);
 		}
 		$this->userSession->logout();
+		header("Location:/login/");
+		return ;
 
+		/* Original Code
 		$response = new RedirectResponse($this->urlGenerator->linkToRouteAbsolute(
 			'core.login.showLoginForm',
 			['clear' => true] // this param the the code in login.js may be removed when the "Clear-Site-Data" is working in the browsers
 		));
 		$response->addHeader('Clear-Site-Data', '"cache", "storage", "executionContexts"');
 		return $response;
+		 */
 	}
 
 	/**

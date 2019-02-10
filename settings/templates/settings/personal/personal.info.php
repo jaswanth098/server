@@ -48,6 +48,7 @@ script('settings', [
 				</h3>
 				<div id="displayavatar">
 					<div class="avatardiv"></div>
+                                        <div style="padding-bottom:0.3rem; font-size:1.5rem;"><?php p($_['uid']) ?></div>
 					<div class="warning hidden"></div>
 					<?php if ($_['avatarChangeSupported']): ?>
 						<label for="uploadavatar" class="inlineblock button icon-upload svg" id="uploadavatarbutton" title="<?php p($l->t('Upload new')); ?>"></label>
